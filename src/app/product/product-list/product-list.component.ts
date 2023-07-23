@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
+  products: any = [1, 2, 3, 4]
+
 }
