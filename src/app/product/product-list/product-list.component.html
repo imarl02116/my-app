@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
-        <div *ngFor="let product of products" class="col-sm">
-            <a routerLink="detail">
+        <div *ngFor="let product of products; let productId = index;" class="col-sm">
+            <a routerLink="{{product.id}}">
                 <div class="card">
                     <img src="./assets/img/man-holding-shipping-box-on-red-brick.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
