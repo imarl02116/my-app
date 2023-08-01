@@ -1,5 +1,6 @@
 export interface Product {
     id: number;
+    coverImage: string;
     name: string;
     price: number;
     description: string;
@@ -14,6 +15,7 @@ export interface Product {
 export const products = [
     {
         id: 0,
+        coverImage: './assets/img/phone-cover.jpg',
         name: 'Phone XL',
         price: 799,
         description: 'A large phone with one of the best screens',
@@ -26,6 +28,7 @@ export const products = [
     },
     {
         id: 1,
+        coverImage: './assets/img/phone-cover.jpg',
         name: 'Phone Mini',
         price: 699,
         description: 'A great phone with one of the best cameras',
@@ -38,6 +41,7 @@ export const products = [
     },
     {
         id: 2,
+        coverImage: './assets/img/phone-cover.jpg',
         name: 'Phone Standard',
         price: 299,
         description: '',
