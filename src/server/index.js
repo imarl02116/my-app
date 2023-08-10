@@ -15,7 +15,7 @@ const app = express()
 
 const PORT = process.env.PORT | '3001'
 
-app.use('/products', products)
+app.use('/api/v1/products', products)
 
 app.listen(PORT, function () {
     console.log('I am running!')
