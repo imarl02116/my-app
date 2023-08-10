@@ -4,10 +4,11 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
+import { ProductService } from './shared/product.service';
 
 const routes: Routes = [
     {
-        path: 'products', component: ProductComponent,
+        path: 'api/v1/products', component: ProductComponent,
         children: [
             { path: '', component: ProductListComponent },
             { path: ':productId', component: ProductDetailComponent }
@@ -25,7 +26,9 @@ const routes: Routes = [
         RouterModule.forChild(routes),
         CommonModule
     ],
-    providers: [],
+    providers: [
+        ProductService
+    ],
     bootstrap: []
 })
 export class ProductModule { }
